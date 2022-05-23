@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Widroz-Music/static/css/main.be515e76.css",
+    "main.js": "/Widroz-Music/static/js/main.b01b44fb.js",
+    "index.html": "/Widroz-Music/index.html",
+    "main.be515e76.css.map": "/Widroz-Music/static/css/main.be515e76.css.map",
+    "main.b01b44fb.js.map": "/Widroz-Music/static/js/main.b01b44fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be515e76.css",
+    "static/js/main.b01b44fb.js"
+  ]
+}
