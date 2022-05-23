@@ -3,10 +3,9 @@ import { useState } from 'react';
 import './App.css';
 import BootstrapStyles from './components/BootstrapStyles';
 import MusicGallery from './components/MusicGallery';
-import Title from './components/Title';
 
 function App() {
-
+  
   const [screenWidth, setScreenWidth] = useState();
   const [screenHeight, setScreenHeight] = useState();
 
@@ -16,17 +15,17 @@ function App() {
   };
 
   useEffect(() => {
+    document.body.style.background = 'rgba(2,0,16,1)';
     updateWindowDimensions();
     window.addEventListener('resize', updateWindowDimensions);
     return () => window.removeEventListener('resize', updateWindowDimensions);
   }, []);
   
   return (
-    <body style={{backgroundColor:'black', height:screenHeight, width:screenWidth}}>
+    <div style={{width:screenWidth, height:screenHeight}}>
       <BootstrapStyles></BootstrapStyles>
-      <Title/>
       <MusicGallery></MusicGallery>
-    </body>
+    </div>
   );
 }
 

@@ -2,14 +2,14 @@
   font-size: 8rem;
   color:lightgray;
   margin-bottom: 4rem;
+  margin-left: 1.5rem;
 
 }
 
 .gallery{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem) 1fr));
-  background: rgb(0,0,3);
-  background: linear-gradient(180deg, rgba(2,0,16,1) 0%, rgba(6,0,14,1) 64%, rgba(10,11,28,1) 100%);
+
   place-items: center;
 }
 
