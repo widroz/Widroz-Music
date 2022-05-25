@@ -5,6 +5,7 @@
   margin-left: 1.5rem;
   display:flex;
   flex-direction: row;
+  
 }
 
 .gallery{
@@ -36,6 +37,7 @@ span{
 .download{
   text-decoration: none;
   color:gray;
+  font-weight: 600;
   font-size: 1.3rem;
   max-width: 12rem;
 }
@@ -45,6 +47,7 @@ span{
 }
 
 p{
+  font-weight: 600;
   font-size: 1.2rem;
   color:white;
   max-width: 10rem;
