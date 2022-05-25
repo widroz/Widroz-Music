@@ -30,10 +30,10 @@ export default function Downloader({ index }) {
 
     return (
         <>{index !== 8
-            ? <div className="downloader  mx-4">
-            <p>Download:</p>
-            <a className="download" href={`${process.env.PUBLIC_URL}${midi_files[index]}`} download>{song_symbols[index]} Midi.</a>
-            <a className="download" href={`${process.env.PUBLIC_URL}${pdf_files[index]}`} download>{song_symbols[index]} PDF.</a>
+            ? <div className="downloader">
+            <p>Download</p>
+            <a className="download" href={`${process.env.PUBLIC_URL}${midi_files[index]}`} download>{song_symbols[index]} Midi</a>
+            <a className="download" href={`${process.env.PUBLIC_URL}${pdf_files[index]}`} download>{song_symbols[index]} PDF</a>
             </div>
             : <p className="sold  mx-4">♆ &nbsp;was sold</p>}</>
     )
