@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Widroz-Music/static/css/main.34c81bd3.css",
+    "main.css": "/Widroz-Music/static/css/main.11d9d9d5.css",
     "main.js": "/Widroz-Music/static/js/main.1f3c48ff.js",
     "index.html": "/Widroz-Music/index.html",
-    "main.34c81bd3.css.map": "/Widroz-Music/static/css/main.34c81bd3.css.map",
+    "main.11d9d9d5.css.map": "/Widroz-Music/static/css/main.11d9d9d5.css.map",
     "main.1f3c48ff.js.map": "/Widroz-Music/static/js/main.1f3c48ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.34c81bd3.css",
+    "static/css/main.11d9d9d5.css",
     "static/js/main.1f3c48ff.js"
   ]
 }
