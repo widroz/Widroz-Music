@@ -1,4 +1,5 @@
 import {React} from 'react'
+import Downloader from './Downloader';
 import Title from './Title';
 
 export default function MusicGallery() {
@@ -18,8 +19,9 @@ export default function MusicGallery() {
     function renderSongs(){
         return songs.map((song, index) => {
             return (
-                <div style={{display:'flex', flexDirection:'row', justifyContent:'center', alignItems:'center'}}>
-                    <iframe key={index} className="song border border-light border-5" width="560" height="315"  src={song} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div className="song">
+                    <iframe key={index} className="song border border-light border-5 mx-5" width="560" height="315"  src={song} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <Downloader index={index}></Downloader>
                 </div>
             )
         })
@@ -27,7 +29,7 @@ export default function MusicGallery() {
 
 
   return (
-    <div className="gallery">
+    <div className="gallery" >
         <Title/>
         {renderSongs()}
     </div>
