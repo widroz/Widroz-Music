@@ -1,4 +1,4 @@
-import {React} from 'react'
+import { React } from 'react'
 import Downloader from './Downloader';
 import Title from './Title';
 
@@ -16,11 +16,11 @@ export default function MusicGallery() {
         "https://www.youtube.com/embed/KgvmKOovnvk" //Neptuno
     ];
 
-    function renderSongs(){
+    function renderSongs() {
         return songs.map((song, index) => {
             return (
-                <div className="song">
-                    <iframe key={index} className="song border border-light border-5 mx-5" width="560" height="315"  src={song} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <div className="song-div">
+                    <iframe key={index} className="song border border-light border-5 mx-4"  src={song} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <Downloader index={index}></Downloader>
                 </div>
             )
@@ -28,10 +28,18 @@ export default function MusicGallery() {
     }
 
 
-  return (
-    <div className="gallery" >
-        <Title/>
-        {renderSongs()}
-    </div>
-  )
+    return (
+        <>{window.screen.height < 1000
+            ? <div className="gallery" >
+                <Title />
+                {renderSongs()}
+            </div>
+            : <div className="gallery-pc" >
+                <Title />
+                {renderSongs()}
+            </div>
+
+        }</>
+
+    )
 }

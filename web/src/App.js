@@ -6,23 +6,14 @@ import MusicGallery from './components/MusicGallery';
 
 function App() {
   
-  const [screenWidth, setScreenWidth] = useState();
-  const [screenHeight, setScreenHeight] = useState();
 
-  const updateWindowDimensions = () => {
-    setScreenWidth(window.innerWidth);
-    setScreenHeight(window.innerHeight);
-  };
 
   useEffect(() => {
-    document.body.style.background = 'rgba(2,0,16,1)';
-    updateWindowDimensions();
-    window.addEventListener('resize', updateWindowDimensions);
-    return () => window.removeEventListener('resize', updateWindowDimensions);
+    document.body.style.background = 'linear-gradient(to bottom, rgba(2,0,16,1) 0%, rgba(1,25,36,1) 100%)';
   }, []);
   
   return (
-    <div style={{width:screenWidth, height:screenHeight}}>
+    <div>
       <BootstrapStyles></BootstrapStyles>
       <MusicGallery></MusicGallery>
     </div>

@@ -1,11 +1,10 @@
 .title{
-  font-size: 8rem;
+  font-size: calc(1em + 10vw);
   color:white;
   margin-bottom: 4rem;
   margin-left: 1.5rem;
   display:flex;
   flex-direction: row;
-  
 }
 
 .gallery{
@@ -15,14 +14,30 @@ justify-content: center;
 align-items: center;
 }
 
+.gallery-pc{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 
-.song{
+
+.song-div{
+  display:flex;
+  flex-direction: row;
   margin-bottom: 4rem;
 }
 
+.song{
+
+  height: calc(1.12em + 22.5vw);
+  width: calc(2em + 40vw);
+}
+
+
 span{
-  -webkit-filter: grayscale(90%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(90%);
+  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(80%);
 }
 
 .icon-button{
@@ -38,7 +53,7 @@ span{
   text-decoration: none;
   color:gray;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: calc(0.5rem + 2vw);
   max-width: 12rem;
 }
 
@@ -48,19 +63,13 @@ span{
 
 p{
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: calc(0.5rem + 2vw);
   color:white;
   max-width: 10rem;
   opacity: 0.8;
 
 }
 
-.song{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 
 .downloader{
   display: flex;
@@ -71,4 +80,6 @@ p{
 
 .sold{
   font-style: italic;
+  font-weight: 100;
 }
+
