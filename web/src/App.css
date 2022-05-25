@@ -30,8 +30,8 @@ align-items: center;
 
 .song{
 
-  height: calc(1.12em + 22.5vw);
-  width: calc(2em + 40vw);
+  height: calc(2.25em + 22.5vw);
+  width: calc(4em + 40vw);
 }
 
 

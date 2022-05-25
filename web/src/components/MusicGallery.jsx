@@ -20,7 +20,7 @@ export default function MusicGallery() {
         return songs.map((song, index) => {
             return (
                 <div className="song-div">
-                    <iframe key={index} className="song border border-light border-5 mx-4"  src={song} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe key={index} className="song border border-light border-5"  src={song} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     <Downloader index={index}></Downloader>
                 </div>
             )

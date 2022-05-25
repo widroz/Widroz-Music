@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { useState } from 'react';
 import './App.css';
 import BootstrapStyles from './components/BootstrapStyles';
 import MusicGallery from './components/MusicGallery';
