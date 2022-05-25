@@ -9,7 +9,7 @@ export default function Title() {
 
     return (
         <div className="title">
-            <b>Guanes&nbsp;&nbsp;</b>
+            <b>Widroz&nbsp;&nbsp;</b>
             <button className="icon-button" onClick={handleClickIcon}>
                 <span>🎶</span>
             </button>
