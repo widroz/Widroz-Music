@@ -32,7 +32,7 @@ align-items: center;
 
   height: calc(2.25em + 22.5vw);
   width: calc(4em + 40vw);
-  margin-left: calc(1em + 3vw);
+  margin-left: calc(0.5em + 5vw);
 }
 
 
